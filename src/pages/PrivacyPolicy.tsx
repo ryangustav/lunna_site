@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Lock, Eye, Database, Bell, Clock, UserCheck, HelpCircle } from 'lucide-react';
+import { Shield, Lock, Eye, Database, Bell, Clock, UserCheck, HelpCircle, Coins, Scale } from 'lucide-react';
 import '../styles/Privacy.css';
 
 /**
@@ -70,6 +70,22 @@ const PrivacyPolicy = () => {
             </div>
           </section>
 
+          {/*Virtual Currency*/}
+          <section className="privacy-section">
+            <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl font-bold text-[#fffffe] flex items-center gap-3">
+              <Coins className="w-6 h-6 text-[#7f5af0]" />
+              Virtual Currency and Virtual Goods</h2>
+            </div>
+            <div className="pl-6 space-y-4">
+              <p>The Service may offer the opportunity to acquire virtual currency (“Virtual Currency”) or virtual goods (“Virtual Goods”), which may require payment of a fee using legal tender (“real money”). All purchases of Virtual Currency are final and non-refundable, non-exchangeable, and non-transferable, except at the sole discretion of the Company or the platform provider. The purchase, sale, or exchange of Virtual Currency outside the Service is strictly prohibited. Any violation of this provision may result in the termination of your Account and/or legal action.</p>
+              <p>The Company reserves the right, at its sole discretion, to modify, manage, regulate, or remove Virtual Currency and/or Virtual Goods at any time. Prices and availability of Virtual Goods are subject to change without prior notice. The Company shall not be liable to you or any third party for the exercise of these rights.</p>
+              <p>You are granted a limited, personal, non-transferable, and non-sublicensable license to use Virtual Goods and Virtual Currency solely within the Service, provided that they have been earned, purchased, or otherwise obtained in a manner authorized by the Company. You acknowledge that you have no ownership rights, title, or interest in any Virtual Goods or Virtual Currency made available through the Service.</p>
+              <p>In the event of a chargeback, the Company reserves the right to issue a warning regarding the violation or to immediately suspend or terminate any and all Accounts associated with your use of the Service. Additionally, the Company may, at its discretion, suspend or terminate other accounts linked to you across different services.</p>
+            </div>
+          </section>
+
+
           {/* Data Protection */}
           <section>
             <div className="flex items-center gap-3 mb-4">
@@ -79,8 +95,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="pl-6">
               <p className="mb-4">
-                We implement appropriate technical and organizational measures to protect your 
-                personal information against unauthorized access, alteration, disclosure, or destruction.
+              All data can only be accessed by Ryan (Onlykgzin), which agreed to not share/sell/distribute any of the stored data with third parties.
               </p>
             </div>
           </section>
@@ -118,6 +133,49 @@ const PrivacyPolicy = () => {
               </p>
             </div>
           </section>
+
+          {/*Limitation of Liability*/}
+          <section className="privacy-section">
+            <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl font-bold text-[#fffffe] flex items-center gap-3">
+              <Scale className="w-6 h-6 text-[#7f5af0]" />
+              Limitation of Liability</h2>
+            </div>
+            <div className="pl-6 space-y-4">
+              <p>To the maximum extent permitted by law, under no circumstances shall the Company be liable to you or any third party for any consequential, incidental, special, punitive, or other indirect damages, including but not limited to lost profits or lost data, arising from your use of the Service or any materials accessed through or downloaded from the Service. This applies regardless of whether such claims are based on warranty, contract, tort, or any other legal theory, and whether or not the Company has been advised of the possibility of such damages.</p>
+              <p>The Company’s total liability to you shall not exceed the greater of: (a) the total amount you have paid to the Company under these Terms in the three (3) months immediately preceding the date on which you first assert a claim, or (b) $100.</p>
+              <p>The limitations and disclaimers set forth in these Terms do not seek to exclude liability or alter rights that cannot be lawfully excluded under applicable law. Certain jurisdictions do not permit the exclusion of implied warranties or the limitation of liability for incidental or consequential damages. In such jurisdictions, the Company's liability shall be limited to the maximum extent permitted by law.</p>
+              <p>You expressly acknowledge that the Company shall not be responsible for user-generated content, including, but not limited to, Your Content, or for any defamatory, offensive, or illegal conduct of any third party. The risk of harm or damage arising from such content or conduct shall rest entirely with you.</p>
+            </div>
+          </section>
+
+
+          {/* Disclaimer of Warranty */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl font-bold text-[#fffffe] flex items-center gap-3">
+              <Bell className="w-6 h-6 text-[#7f5af0]" />
+              Disclaimer of Warranty</h2>
+            </div>
+            <div className="pl-6">
+              <p className="mb-4">
+              The Services and the Service Materials are provided "as is" without any warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. Furthermore, while the Company endeavors to provide a positive user experience, we cannot and do not warrant that the Services will always be secure, error-free, or that the Services will function without delays, disruptions, or imperfections. The foregoing disclaimers shall apply to the fullest extent permitted by applicable law.
+              </p>
+            </div>
+          </section>
+
+          {/*Acknowledgement*/}
+          <section className="privacy-section">
+            <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl font-bold text-[#fffffe] flex items-center gap-3">
+              <Eye className="w-6 h-6 text-[#7f5af0]" />
+              Acknowledgement</h2>
+            </div>
+            <div className="pl-6 space-y-4">
+              <p>Usage of any of our services affirms that the Licensee has read this Agreement, understands it, and agrees to be bound by its contents.</p>
+            </div>
+          </section>
+
 
           {/* Updates to Policy */}
           <section>
