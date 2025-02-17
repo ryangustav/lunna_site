@@ -31,11 +31,7 @@
 
 <h2 id="started">🚀 Getting started</h2>
 
-Here you describe how to run your project locally
-
 <h3>Prerequisites</h3>
-
-Here you list all prerequisites necessary for running your project. For example:
 
 - [NodeJS]([https://github.com/](https://nodejs.org/en))
 
