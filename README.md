@@ -37,7 +37,7 @@
 
 <h3>Cloning</h3>
 
-How to clone your project
+How to clone
 
 ```bash
 git clone https://github.com/ryangustav/lunna_site
