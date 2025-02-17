@@ -1,0 +1,243 @@
+
+.shop-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px; 
+    background-color: #16161a;
+  }
+  
+.shop-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+  
+.shop-header {
+    padding: 4rem 0;
+    text-align: center;
+}
+  
+.shop-sections {
+    padding: 2rem 0;
+}
+
+
+.card {
+    background: #242629;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.featured {
+    border: 2px solid #2cb67d;
+}
+
+
+.card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(127, 90, 240, 0.15);
+    color: #7f5af0;
+    margin-bottom: 16px;
+}
+
+.card.featured .card-icon {
+    background: rgba(44, 182, 125, 0.15);
+    color: #2cb67d;
+}
+
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #fffffe;
+    margin-bottom: 8px;
+}
+
+.card .price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fffffe;
+    margin-bottom: 12px;
+}
+
+.card .price span {
+    font-size: 1rem;
+    color: #94a1b2;
+}
+
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    color: #94a1b2;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.card ul li svg {
+    margin-right: 8px;
+    color: #7f5af0;
+}
+
+/* Botões */
+.card button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background: #7f5af0;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card button:hover {
+    background: #6f4af0;
+}
+
+
+
+.coin-card {
+    background: #1b1e22;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(127, 90, 240, 0.15);
+    border: 1px solid #7f5af0;
+    width: 100%;
+    max-width: 250px; 
+    height: fit-content; 
+    margin: 0 auto; 
+}
+
+.coin-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 12px rgba(127, 90, 240, 0.2);
+}
+
+
+.coin-card .icon {
+    color: #ffb800;
+    margin-bottom: 8px;
+}
+
+.coin-card h3 {
+    font-size: 1.1rem; 
+    color: #fffffe;
+    margin-bottom: 6px;
+}
+
+.coin-card .bonus {
+    font-size: 0.8rem; 
+    color: #2cb67d;
+    margin-bottom: 6px;
+}
+
+.coin-card .price {
+    font-size: 1.3rem; 
+    font-weight: bold;
+    color: #fffffe;
+    margin-bottom: 10px;
+}
+
+
+.coin-card button {
+    width: 100%;
+    padding: 8px; 
+    font-size: 0.9rem; 
+    border-radius: 6px;
+    background: linear-gradient(135deg, #7f5af0, #5a3fc0);
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.coin-card button:hover {
+    background: linear-gradient(135deg, #6f4af0, #4a2fb0);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem; 
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  @media (min-width: 768px) {
+    .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  
+  .w-5 {
+    color: #e7dbff;
+  }
+  
+ .coin-card h4 {
+    color: #e7dbff;
+ }
+
+  .grid-item {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 10px;
+  }
+  
+  .flex-item {
+    
+    width: calc(33.33% - 10px); 
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+
+@media (max-width: 768px) {
+    .grid-cols-1.md\:grid-cols-4 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .coin-card {
+        max-width: 160px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-1.md\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
