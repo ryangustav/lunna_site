@@ -1,5 +1,5 @@
-import React, { ReactElement } from 'react';
-import { Coins, Crown, Star, Zap, Gift, Diamond, Rocket } from 'lucide-react';
+import { ReactElement } from 'react';
+import { Crown, Star, Zap, Diamond, Rocket } from 'lucide-react';
 import '../styles/Shop.css'; // Importar os estilos
 
 interface VipProps {
@@ -98,7 +98,7 @@ const Vip = () => {
  * @param {{ icon: ReactElement, title: string, price: string, period: string, features: string[], featured?: boolean, accentColor: string }} props
  * @returns {JSX.Element}
  */
-const PlanCard = ({ icon, title, price, period, features, featured, accentColor }: VipProps) => (
+const PlanCard = ({ icon, title, price, period, features, featured }: VipProps) => (
     <div className={`card ${featured ? 'featured' : ''}`}>
       {featured && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#2cb67d] text-white px-4 py-1 rounded-full text-sm">

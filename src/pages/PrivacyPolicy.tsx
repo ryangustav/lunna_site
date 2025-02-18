@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Lock, Eye, Database, Bell, Clock, UserCheck, HelpCircle, Coins, Scale } from 'lucide-react';
 import '../styles/Privacy.css';
 
