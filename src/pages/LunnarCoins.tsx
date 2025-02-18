@@ -1,4 +1,4 @@
-import { Coins, Crown, Star, Zap, Gift, Diamond, Rocket } from 'lucide-react';
+import { Coins, Gift,} from 'lucide-react';
 import '../styles/Shop.css'; // Importar os estilos
 
 interface CoinsProps {
