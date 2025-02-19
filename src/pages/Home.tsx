@@ -1,5 +1,5 @@
-import React from 'react';
-import { Menu, Coins, Brain, Dices } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, Coins, Brain, Dices, X } from 'lucide-react';
 
 interface HomeProps {
   icon: React.ReactNode;
@@ -17,24 +17,31 @@ interface HomeProps {
  */
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <nav className="nav">
-        <div className="nav-content container">
-          <a href="/" className="nav-brand">Lunna</a>
-          <div className="nav-links">
-            <a href="#features" className="nav-link">Features</a>
-            <a href="#commands" className="nav-link">Commands</a>
-            <a href="https://discord.gg/DaUhFcjJfH" className="nav-link">Support</a>
-            <a href="/vip" className="nav-link">Vips</a>
-            <a href='/LunnarCoins' className='nav-link'>LunnarCoins</a>
-            <a href='/Privacy' className='nav-link'>Privacy Policy</a>
-          </div>
-          <button className="mobile-menu">
-            <Menu size={24} />
-          </button>
+       <nav className="nav">
+         <div className="nav-content container">
+        <a href="/" className="nav-brand">Lunna</a>
+
+        {/* Menu de links */}
+        <div className={`nav-links ${isOpen ? "open" : ""}`}>
+          <a href="#features" className="nav-link">Features</a>
+          <a href="#commands" className="nav-link">Commands</a>
+          <a href="https://discord.gg/DaUhFcjJfH" className="nav-link">Support</a>
+          <a href="/vip" className="nav-link">Vips</a>
+          <a href='/LunnarCoins' className='nav-link'>LunnarCoins</a>
+          <a href='/Privacy' className='nav-link'>Privacy Policy</a>
         </div>
-      </nav>
+
+                {/* Botão de menu para mobile */}
+          <button className="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+      </div>
+    </nav>
       <section className="hero">
         <div className="container">
           <h1 className="hero-title">Lunna Discord Bot</h1>
